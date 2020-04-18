@@ -17,7 +17,6 @@
 <body>
 
     <div class="container">
-        
         <!-- SIDE -->
         <section class="side">
 
@@ -48,7 +47,7 @@
 
             <!-- Side Contacts -->
             <div class="side-contacts">
-                <ul>
+                <ul class="list-style-none">
                     <li>
                         <img class="mg-left-10" src="img/avatar_1.jpg" alt="Avatar One Image">
                         <div class="avatar-name mg-left-10 pd-5">
@@ -148,38 +147,47 @@
 
             <!-- Content Display Chat -->
             <div class="content-display-chat">
-                <ul>
-                    <li class="my-message">
-                        <p class="chat-message">
+                <ul class="conversation list-style-none">
+                    <li class="my-message mg-bottom-5">
+                        <p class="chat-message my-msg-color">
                             Ciao come stai?
                             <span>06:20</span>
                         </p>
                     </li>   
-                    <li class="friends-message mg-top-5 mg-bottom-5">
-                        <p class="chat-message">
+                    <li class="friends-message mg-bottom-5">
+                        <p class="chat-message friends-msg-color">
                             Ciao come stai?
                             <span>14:21</span>
                         </p>
                     </li>    
-                    <li class="my-message">
-                        <p class="chat-message">
+                    <li class="my-message mg-bottom-5">
+                        <p class="chat-message my-msg-color">
                             Ciao come stai?
                             <span>21:41</span>
                         </p>
-                    </li>    
+                    </li>  
                 </ul>
             </div>
             
             <!-- Content Messages Bar -->
             <div class="content-messages-bar">
                 <i class="far fa-smile set-icon"></i>
-                <input class="pd-10" type="text" placeholder="Scrivi un messaggio">
+                <input  class="pd-10 new-message" type="text" placeholder="Scrivi un messaggio">
                 <i class="fas fa-microphone set-icon"></i>
+                <i class="fab fa-telegram-plane send-icon set-icon no-active"></i>
             </div>
-
         </div>
-
     </div>
+
+    <!-- TEMPLATE -->
+    <div class="template">
+        <li class="my-message mg-bottom-5">
+            <p class="chat-message my-msg-color">
+                <span>06:20</span>
+            </p>
+        </li>   
+    </div>
+
     
 </body>
 </html>

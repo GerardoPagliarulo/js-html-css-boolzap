@@ -37,6 +37,18 @@ body {
     color: #b1b1b1;
 }
 
+.list-style-none {
+    list-style: none;
+}
+
+.template {
+    display: none;
+}
+
+.no-active {
+    display: none;
+}
+
 
 /* LAYOUT */
 .container {
@@ -108,7 +120,7 @@ body {
 /* SIDE CONTACTS */
 .side-contacts {
     height: 550px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .side-contacts ul li {
@@ -176,6 +188,7 @@ body {
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
     padding: 35px 50px 0px 50px;
+    overflow-y: auto;
 }
 
 .my-message {
@@ -183,32 +196,37 @@ body {
     justify-content: flex-end;
 }
 
-.friends-message {
+/* .friends-message {
     display: flex;
     justify-content: flex-start;
-}
-
-.friends-message .chat-message {
-    background: #fff;
-}
+} */
 
 .chat-message {
-    display: flex;
-    height: 35px;
+    max-width: 120px;
+    min-height: 35px;
+    overflow-wrap: break-word;
     padding: 10px 3px 3px 10px;
     font-size: 10px;
     font-weight: 700;
-    background: #abf9b2;
     border-radius: 6px;
+}
+
+.friends-msg-color {
+    background: #fff;
+}
+
+.my-msg-color {
+    background: #abf9b2;
 }
 
 .chat-message span {
     display: flex;
-    align-items: flex-end;
-    padding: 10px 0px 0px 10px;
+    justify-content: flex-end;
+    padding-left: 80px;
     color: #b2b2b2;
     font-size: 8px;
 }
+
 
 /* MESSAGES BAR */
 .content-messages-bar {
@@ -222,6 +240,14 @@ body {
 .content-messages-bar i {
     flex-basis: 10%;
     text-align: center;
+}
+
+.content-messages-bar .send-icon {
+    cursor: pointer;
+}
+
+.content-messages-bar .send-icon:hover {
+    color: skyblue;
 }
 
 .content-messages-bar input {
