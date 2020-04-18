@@ -21,19 +21,24 @@ $(document).ready(function () {
         sendmessage();
     });
 
+    // Scorrimento Chat
+    //var chatDisplay = $('.content-display-chat');
+    //chatDisplay.scrollTop(chatDisplay.innerHeight());
+
+
     // FUNZIONI
     // Funzione: Invio Messaggi
     function sendmessage() {
         var text = newMessage.val().trim();
 
         if (text !== '') {
-            $('.template li p').prepend(text);
+            $('.template li p').text(text);
 
             var newMessageWrited = $('.template li').clone(); 
 
             actualChat.append(newMessageWrited);
 
-            $('.template li p').first().text('');
+            $('.template li p').text('');
             newMessage.val('');        
         }
 

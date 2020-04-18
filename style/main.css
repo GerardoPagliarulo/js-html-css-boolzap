@@ -68,7 +68,9 @@ body {
     height: 100%;
 }
 
+
 /* SIDE TOP MENU */
+
 
 /* SIDE NOTIFICATION */
 .side-notifications {
@@ -88,6 +90,7 @@ body {
     opacity: .5;
     text-decoration: underline;
 }
+
 
 /* SIDE SEARCH */
 .side-search {
@@ -116,6 +119,7 @@ body {
     color: #b1b1b1;
     font-weight: bold;
 }
+
 
 /* SIDE CONTACTS */
 .side-contacts {
@@ -171,6 +175,7 @@ body {
     height: 100%;
 }
 
+
 /* CONTENT TOP MENU */
 .active-avatar {
     display: flex;
@@ -183,6 +188,7 @@ body {
     color: #b1b1b1;
 }
 
+
 /* DISPLAY CHAT */
 .content-display-chat {
     flex-grow: 1;
@@ -191,15 +197,20 @@ body {
     overflow-y: auto;
 }
 
-.my-message {
+.conversation {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
 }
 
-/* .friends-message {
-    display: flex;
-    justify-content: flex-start;
-} */
+.conversation .my-message {
+    align-self: flex-end;
+    background: #abf9b2;
+}
+
+.conversation .friends-message {
+    align-self: flex-start;
+    background: #fff;
+}
 
 .chat-message {
     max-width: 120px;
@@ -211,21 +222,11 @@ body {
     border-radius: 6px;
 }
 
-.friends-msg-color {
-    background: #fff;
-}
-
-.my-msg-color {
-    background: #abf9b2;
-}
-
 .chat-message span {
-    display: flex;
-    justify-content: flex-end;
     padding-left: 80px;
     color: #b2b2b2;
     font-size: 8px;
-}
+} 
 
 
 /* MESSAGES BAR */
