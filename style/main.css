@@ -29,7 +29,6 @@ body {
 
 .set-menu-img {
     width: 40px;
-    padding: 7px 0px;
     border-radius: 50%;
 }
 
@@ -70,12 +69,15 @@ body {
 
 
 /* SIDE TOP MENU */
-
+.side-top-menu {
+    padding: 7px 0px 7px 7px;
+}
 
 /* SIDE NOTIFICATION */
 .side-notifications {
     display: flex;
     align-items: center;
+    padding: 10px 15px 10px 15px;
     background: #9fd8f9;
 }
 
@@ -130,9 +132,11 @@ body {
 .side-contacts ul li {
     display: flex;
     align-items: center;
+    padding: 6px;
     list-style: none;
     border-bottom: 1px solid rgba(178, 178, 178, .4);
     transition: background .5s;
+    cursor: pointer;
 }
 
 .side-contacts ul li:last-child {
@@ -145,7 +149,6 @@ body {
 
 .side-contacts img {
     width: 50px;
-    padding: 7px 0px;
     border-radius: 50%;
 }
 
@@ -213,7 +216,8 @@ body {
 }
 
 .chat-message {
-    max-width: 120px;
+    display: flex;
+    /* max-width: 120px; */
     min-height: 35px;
     overflow-wrap: break-word;
     padding: 10px 3px 3px 10px;
@@ -222,8 +226,14 @@ body {
     border-radius: 6px;
 }
 
+.chat-message .msg-text {
+    max-width: 150px;
+    margin-bottom: 7px;
+}
+
 .chat-message span {
-    padding-left: 80px;
+    align-self: flex-end;
+    margin-left:  4px;
     color: #b2b2b2;
     font-size: 8px;
 } 
