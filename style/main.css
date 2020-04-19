@@ -219,7 +219,7 @@ body {
     display: flex;
     /* max-width: 120px; */
     min-height: 35px;
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
     padding: 10px 3px 3px 10px;
     font-size: 10px;
     font-weight: 700;
@@ -228,6 +228,7 @@ body {
 
 .chat-message .msg-text {
     max-width: 150px;
+    overflow-wrap: break-word;
     margin-bottom: 7px;
 }
 
