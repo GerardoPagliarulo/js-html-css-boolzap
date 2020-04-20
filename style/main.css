@@ -24,6 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
     background: #eaeaea;
 }
 
@@ -98,7 +99,7 @@ body {
 .side-search {
     display: flex;
     align-items: center;
-    background: #eaeaea;
+    background: #f9f8f8;
 }
 
 .side-search i {
@@ -107,6 +108,7 @@ body {
     background: #fff;
     padding: 5px 25px;
     color: #b1b1b1;
+    cursor: pointer;
 }
 
 .side-search input {
@@ -125,6 +127,7 @@ body {
 
 /* SIDE CONTACTS */
 .side-contacts {
+    /* flex-grow: 1; */
     height: 550px;
     overflow-y: auto;
 }
@@ -139,12 +142,17 @@ body {
     cursor: pointer;
 }
 
+.side-contacts .active {
+    background: #E9EBEB;
+    border-bottom-color: transparent;
+}
+
 .side-contacts ul li:last-child {
     border-bottom: none;
 }
 
-.side-contacts ul li:active {
-    background: #eaebeb;
+.side-contacts ul li:hover {
+    background: #f5f5f5;
 }
 
 .side-contacts img {
@@ -152,20 +160,21 @@ body {
     border-radius: 50%;
 }
 
-.side-contacts .avatar-name {
+.side-contacts .avatar-info {
+    display: flex;
+    /* flex-grow: 1; */
     width: 100%;
     max-width: 100%;
 }
 
-.side-contacts h5 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
+.side-contacts .avatar-info span {
+    flex-grow: 1;
+    text-align: end;
+    padding-top: 2px;
 }
 
-.side-contacts h5 span,
-.side-contacts p {
+.side-contacts .avatar-info span,
+.side-contacts .avatar-name p {
     color: #b2b2b2;
 }
 
@@ -178,7 +187,7 @@ body {
     height: 100%;
 }
 
-
+/*** HEADER ***/
 /* CONTENT TOP MENU */
 .active-avatar {
     display: flex;
@@ -191,7 +200,7 @@ body {
     color: #b1b1b1;
 }
 
-
+/*** MAIN ***/
 /* DISPLAY CHAT */
 .content-display-chat {
     flex-grow: 1;
@@ -205,12 +214,12 @@ body {
     flex-direction: column;
 }
 
-.conversation .my-message {
+.conversation .chat-message.my-message {
     align-self: flex-end;
     background: #abf9b2;
 }
 
-.conversation .friends-message {
+.conversation .chat-message.friends-message {
     align-self: flex-start;
     background: #fff;
 }
@@ -239,11 +248,11 @@ body {
     font-size: 8px;
 } 
 
-
+/***  FOOTER ***/
 /* MESSAGES BAR */
 .content-messages-bar {
     height: 54px;
-    background: #eaeaea;
+    background: #f9f8f8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,6 +261,8 @@ body {
 .content-messages-bar i {
     flex-basis: 10%;
     text-align: center;
+    color: #808080;
+    cursor: pointer;
 }
 
 .content-messages-bar .send-icon {
@@ -263,7 +274,7 @@ body {
 }
 
 .content-messages-bar input {
-    flex-basis: 80%;
+    flex-grow: 1;
     border: none;
 }
 
