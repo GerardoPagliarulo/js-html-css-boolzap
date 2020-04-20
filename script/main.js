@@ -27,7 +27,7 @@ $(document).ready(function () {
         }
     });
 
-    // Messaggio inviato con click su icon "telegram-plane"
+    // Messaggio inviato con click su icona "plane"
     sendBtn.click(function () { 
 
         sendmessage();
@@ -39,7 +39,7 @@ $(document).ready(function () {
     });
 
     // Scorrimento automatico della Chat
-    //var chatDisplay = $('.content-display-chat');
+    //var chatDisplay = $('.content-display-chat .conversation li');
     //chatDisplay.scrollTop(chatDisplay.innerHeight());
 
     // Ricerca Contatti
