@@ -49,8 +49,8 @@
 
             <!-- Side Contacts -->
             <div class="side-contacts">
-                <ul class="list-style-none">
-                    <li class="active">
+                <ul class="list-contacts list-style-none">
+                    <li class="user active-profile" data-conversation="0">
                         <img class="mg-left-10" src="img/avatar_1.jpg" alt="Avatar One Image">
                         <div class="avatar-info mg-left-10">
                             <div class="avatar-name">
@@ -60,7 +60,7 @@
                             <span class="font-sz-9">17.53</span>       
                         </div>
                     </li>
-                    <li>
+                    <li class="user" data-conversation="1">
                         <img class="mg-left-10" src="img/avatar_2.jpg" alt="Avatar Two Image">
                         <div class="avatar-info mg-left-10">
                             <div class="avatar-name">
@@ -70,7 +70,7 @@
                             <span class="font-sz-9">17.53</span>       
                         </div>
                     </li>
-                    <li>
+                    <li class="user" data-conversation="2">
                         <img class="mg-left-10" src="img/avatar_3.jpg" alt="Avatar Three Image">
                         <div class="avatar-info mg-left-10">
                             <div class="avatar-name">
@@ -80,7 +80,7 @@
                             <span class="font-sz-9">17.53</span>       
                         </div>
                     </li>
-                    <li>
+                    <li class="user" data-conversation="3">
                         <img class="mg-left-10" src="img/avatar_4.jpg" alt="Avatar Four Image">
                         <div class="avatar-info mg-left-10">
                             <div class="avatar-name">
@@ -90,7 +90,7 @@
                             <span class="font-sz-9">17.53</span>       
                         </div>
                     </li>
-                    <li>
+                    <li class="user" data-conversation="4">
                         <img class="mg-left-10" src="img/avatar_5.jpg" alt="Avatar Fivee Image">
                         <div class="avatar-info mg-left-10">
                             <div class="avatar-name">
@@ -100,7 +100,7 @@
                             <span class="font-sz-9">17.53</span>       
                         </div>
                     </li>
-                    <li>
+                    <li class="user" data-conversation="6">
                         <img class="mg-left-10" src="img/avatar_6.jpg" alt="Avatar Six Image">
                         <div class="avatar-info mg-left-10">
                             <div class="avatar-name">
@@ -110,7 +110,7 @@
                             <span class="font-sz-9">17.53</span>       
                         </div>
                     </li>
-                    <li>
+                    <li class="user" data-conversation="6">
                         <img class="mg-left-10" src="img/avatar_7.jpg" alt="Avatar Seven Image">
                         <div class="avatar-info mg-left-10">
                             <div class="avatar-name">
@@ -120,7 +120,7 @@
                             <span class="font-sz-9">17.53</span>       
                         </div>
                     </li>
-                    <li>
+                    <li class="user" data-conversation="7">
                         <img class="mg-left-10" src="img/avatar_8.jpg" alt="Avatar Eight Image">
                         <div class="avatar-info mg-left-10">
                             <div class="avatar-name">
@@ -158,28 +158,141 @@
 
                 <!-- MAIN: Content Display Chat -->
                 <main class="content-display-chat">
-                    <ul class="conversation list-style-none">
-                        <li class="chat-message my-message mg-bottom-5">
-                            <p class="msg-text">Ciao come stai?</p>
-                            <span>06:20</span>
-                        </li>   
-                        <li class="chat-message friends-message mg-bottom-5">
-                            <p class="msg-text">Ciao come stai?</p>
-                            <span>14:21</span>
-                        </li>    
-                        <li class="chat-message my-message mg-bottom-5">
-                            <p class="msg-text">Ciao come stai?</p>
-                            <span>21:41</span>
-                        </li>  
-                    </ul>
+                    <div class="right-messages active" data-conversation="0">
+                        <ul class="conversation list-style-none">
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>06:20</span>
+                            </li>   
+                            <li class="chat-message friends-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>14:21</span>
+                            </li>    
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>21:41</span>
+                            </li>  
+                        </ul>    
+                    </div>
+                    <div class="right-messages" data-conversation="1">
+                        <ul class="conversation list-style-none">
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>06:20</span>
+                            </li>   
+                            <li class="chat-message friends-message mg-bottom-5">
+                                <p class="msg-text">Male</p>
+                                <span>14:21</span>
+                            </li>    
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ah! Ho capito. Ciao.</p>
+                                <span>21:41</span>
+                            </li>  
+                        </ul>    
+                    </div>
+                    <div class="right-messages" data-conversation="2">
+                        <ul class="conversation list-style-none">
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>06:20</span>
+                            </li>   
+                            <li class="chat-message friends-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>14:21</span>
+                            </li>    
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>21:41</span>
+                            </li>  
+                        </ul>    
+                    </div>
+                    <div class="right-messages" data-conversation="3">
+                        <ul class="conversation list-style-none">
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>06:20</span>
+                            </li>   
+                            <li class="chat-message friends-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>14:21</span>
+                            </li>    
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>21:41</span>
+                            </li>  
+                        </ul>    
+                    </div>
+                    <div class="right-messages" data-conversation="4">
+                        <ul class="conversation list-style-none">
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>06:20</span>
+                            </li>   
+                            <li class="chat-message friends-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>14:21</span>
+                            </li>    
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>21:41</span>
+                            </li>  
+                        </ul>    
+                    </div>
+                    <div class="right-messages" data-conversation="5">
+                        <ul class="conversation list-style-none">
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>06:20</span>
+                            </li>   
+                            <li class="chat-message friends-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>14:21</span>
+                            </li>    
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>21:41</span>
+                            </li>  
+                        </ul>    
+                    </div>
+                    <div class="right-messages" data-conversation="6">
+                        <ul class="conversation list-style-none">
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>06:20</span>
+                            </li>   
+                            <li class="chat-message friends-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>14:21</span>
+                            </li>    
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>21:41</span>
+                            </li>  
+                        </ul>    
+                    </div>
+                    <div class="right-messages" data-conversation="7">
+                        <ul class="conversation list-style-none">
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>06:20</span>
+                            </li>   
+                            <li class="chat-message friends-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>14:21</span>
+                            </li>    
+                            <li class="chat-message my-message mg-bottom-5">
+                                <p class="msg-text">Ciao come stai?</p>
+                                <span>21:41</span>
+                            </li>  
+                        </ul>    
+                    </div>
                 </main>
 
                 <!-- FOOTER: Content Messages Bar -->
                 <footer class="content-messages-bar">
                     <i class="far fa-smile"></i>
                     <input  class="pd-10 new-message" type="text" placeholder="Scrivi un messaggio">
-                    <i class="fas fa-microphone"></i>
-                    <i class="fas fa-paper-plane send-icon no-active"></i>
+                    <i class="fas fa-microphone send-icon"></i>
                 </footer>
             
         </div>
@@ -190,7 +303,7 @@
     <div class="template">
         <li class="chat-message mg-bottom-5">
             <p class="msg-text"></p>
-            <span>06:20</span>
+            <span class="msg-time"></span>
         </li>   
     </div>
     

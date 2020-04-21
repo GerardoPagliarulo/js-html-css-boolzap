@@ -45,10 +45,6 @@ body {
     display: none;
 }
 
-.no-active {
-    display: none;
-}
-
 
 /* LAYOUT */
 .container {
@@ -142,7 +138,7 @@ body {
     cursor: pointer;
 }
 
-.side-contacts .active {
+.side-contacts .user.active-profile {
     background: #E9EBEB;
     border-bottom-color: transparent;
 }
@@ -205,13 +201,21 @@ body {
 .content-display-chat {
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
-    padding: 35px 50px 0px 50px;
     overflow-y: auto;
+}
+
+.content-display-chat .right-messages{
+    display: none;
+}
+
+.content-display-chat .right-messages.active{
+    display: block;
 }
 
 .conversation {
     display: flex;
     flex-direction: column;
+    padding: 35px 50px 10px 50px;
 }
 
 .conversation .chat-message.my-message {
