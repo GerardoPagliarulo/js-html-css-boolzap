@@ -3,7 +3,6 @@ $(document).ready(function () {
     var newMessage = $('.new-message');
     var sendIcon = $('.content-messages-bar .send-icon');
     var searchContact =  $('.side-search input');
-    
 
 
     /**
@@ -103,10 +102,9 @@ $(document).ready(function () {
     //});
 
 
-        /**
+    /**
      * SELEZIONE DI UNA CONVERSAZIONE
      */
-
     $('.side-contacts .user').click(function() {
 
         if(!($(this).hasClass('active-profile'))) {
@@ -171,7 +169,7 @@ $(document).ready(function () {
         scrollChat(); 
     }
 
-    // Creazione e inserimento orario
+    // Funzione: Creare e inserire orario
     function time() {
         var data = new Date();
         var ora = addZero( data.getHours() );
@@ -179,7 +177,7 @@ $(document).ready(function () {
         return orario = ora + ':' + minuti;
     }        
 
-    // Aggiungi zero iniziale a numeri inferiori a 10
+    // Funzione: Aggiungere zero iniziale a numeri inferiori a 10
     function addZero(numero) {
         if(numero < 10) {
             numero = '0' + numero;
