@@ -183,6 +183,7 @@ body {
     height: 100%;
 }
 
+
 /*** HEADER ***/
 /* CONTENT TOP MENU */
 .active-avatar {
@@ -195,6 +196,7 @@ body {
     font-weight: 700;
     color: #b1b1b1;
 }
+
 
 /*** MAIN ***/
 /* DISPLAY CHAT */
@@ -237,20 +239,64 @@ body {
     font-size: 10px;
     font-weight: 700;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .chat-message .msg-text {
-    max-width: 150px;
+    min-width: 30px;
+    max-width: 200px;
+    min-height: 20px;
     overflow-wrap: break-word;
     margin-bottom: 7px;
 }
 
-.chat-message span {
-    align-self: flex-end;
+.chat-message .msg-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.chat-message .msg-info i {
+    display: none;
+    align-self: center;
+    flex-grow: 1;
+    font-size: 16px;
+    right: 5px;
+    top: -2px;
+    color: #b2b2b2;
+} 
+
+.chat-message .msg-info .list-msg-options {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    width: 98px;
+    padding: 3px 5px;
+    line-height: 24px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    background: #fff;
+    box-shadow: 0px 0px 20px 1px #aaa;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.chat-message .msg-info .list-msg-options li {
+    color: #000;
+}
+
+.chat-message .msg-info .list-msg-options li:hover {
+    color: #b2b2b2;
+}
+
+.chat-message .msg-info span {
     margin-left:  4px;
     color: #b2b2b2;
     font-size: 8px;
 } 
+
 
 /***  FOOTER ***/
 /* MESSAGES BAR */

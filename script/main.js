@@ -46,7 +46,26 @@ $(document).ready(function () {
 
         // Risposta interlocutore dopo 1s
         setTimeout (risposta, 1000);
-    });        
+    });   
+    
+    /**
+     * CANCELLAZIONE MESSAGGI
+     */
+    $('.chat-message').hover(function () {
+        $(this).find('i').show();
+            
+        }, function () {
+            $(this).find('i').hide();
+        }
+    );
+
+    $('.chat-message .msg-info .fa-angle-down').click(function() {
+        $(this).next('.list-msg-options').toggle();
+
+        $('.delete-msg').click( function () {
+            $(this).parents('.chat-message').remove();
+        });
+    });
 
 
     /*
@@ -116,13 +135,13 @@ $(document).ready(function () {
         var text = newMessage.val().trim();
 
         if (text !== '') {
-            $('.template li p').text(text);
+            $('.template .chat-message p').text(text);
 
-            var newMessageWrited = $('.template li').clone(); 
+            var newMessageWrited = $('.template .chat-message').clone(); 
 
             newMessageWrited.addClass('my-message');
 
-            newMessageWrited.children('.msg-time').text(time());    
+            newMessageWrited.find('.msg-time').text(time());    
 
             var actualChat = $('.right-messages.active .conversation');
             actualChat.append(newMessageWrited);
@@ -136,13 +155,13 @@ $(document).ready(function () {
 
     // Funzione: Risposta interlocutore
     function risposta() {
-        $('.template li p').text('Ok');
+        $('.template .chat-message p').text('Ok');
 
-        var returnMessage = $('.template li').clone(); 
+        var returnMessage = $('.template .chat-message').clone(); 
 
         returnMessage.addClass('friends-message');
 
-        returnMessage.children('.msg-time').text(time());    
+        returnMessage.find('.msg-time').text(time());    
 
         var actualChat = $('.right-messages.active .conversation');
         actualChat.append(returnMessage);
