@@ -48,18 +48,19 @@ $(document).ready(function () {
         setTimeout (risposta, 1000);
     });   
     
+    
     /**
      * CANCELLAZIONE MESSAGGI
      */
-    $('.chat-message').hover(function () {
+    $('body').on('mouseenter', '.chat-message', function () {
         $(this).find('i').show();
-            
-        }, function () {
-            $(this).find('i').hide();
-        }
-    );
+    });
 
-    $('.chat-message .msg-info .fa-angle-down').click(function() {
+    $('body').on('mouseleave', '.chat-message', function () {
+        $(this).find('i').hide();
+    });
+
+    $('body').on('click', '.fa-angle-down', function() {
         $(this).next('.list-msg-options').toggle();
 
         $('.delete-msg').click( function () {
